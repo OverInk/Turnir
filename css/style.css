@@ -1,9 +1,6 @@
 body {
-  font-family: "Istok Web", sans-serif;
-  background: url("http://picjumbo.com/wp-content/uploads/HNCK2189-1300x866.jpg") no-repeat #000;
+  background: url(../img/main-bg.jpg) center no-repeat;
   background-size: cover;
-  min-height: 100%;
-  margin: 0;
 }
 
 #bracket {
@@ -67,10 +64,7 @@ body {
 }
 
 .matchup {
-  margin: 0;
-  width: 100%;
-  padding: 10px 0;
-  height: 60px;
+  padding: 24px 0;
   transition: all 0.2s;
 }
 
