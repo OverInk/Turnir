@@ -1,12 +1,4 @@
-.wrappet{
-	position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 86%;
-    height: 300px;
-	 background-color: rgb(255 255 255 / 48%);
-	 margin: 80px 100px;
-}
+
 .large-header {
   position: relative;
   width: 100%;
@@ -14,7 +6,6 @@
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-//   z-index: 1;
 }
 
 #large-header {
@@ -35,10 +26,25 @@
   }
 }
 
-
-
+.table-turnir{
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 86%;
+    height: 300px;
+	 background-color: rgb(255 255 255 / 48%);
+	 margin: 80px 100px;
+	 display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .block1 {
+	display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+	align-items: center;
 		&__path1 {
 			display: flex;
 			flex-direction: row;
@@ -53,13 +59,31 @@
 			display: flex;
 			flex-direction: column;
 		}
+		&__path3-allteam {
+			display: flex;
+			flex-direction: column;
+    		align-items: center;
+		}
+		&__path3-nextstage{
+			display: flex;
+			flex-direction: column;
+    		align-items: center;
+		}
+}
+.path3-allteam{
+	display: flex;
+}
+.path3-nextstage{
+	display: flex;
 }
 .title-stage {
+	
 }
 .team {
 	width: 100px;
 	height: 30px;
 	background: #FFF;
+	margin: 10px 5px 0px 5px;
 }
 .num1 {
 }
