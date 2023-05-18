@@ -7,7 +7,6 @@
   height: 100%;
   background: #333;
   overflow: hidden;
-  background-size: cover;
   background-position: center center;
 }
 
@@ -20,7 +19,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 175px;
+  height: 140px;
   background: rgba(255, 255, 255, 0.48);
   display: flex;
   flex-direction: row;
@@ -38,19 +37,19 @@
   font-family: "Paytone One", sans-serif;
 }
 .text__mine {
-  font-size: 100px;
+  font-size: 65px;
   font-family: "Orbitron", sans-serif;
 }
 .text__mine span {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .table-turnir {
   position: absolute;
-  top: 23%;
+  top: 14%;
   left: 0px;
   width: 100%;
-  height: 43%;
+  height: 42%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,23 +132,65 @@
   background-color: #959595;
 }
 
+.next__session {
+  position: absolute;
+  bottom: 4%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.48);
+  width: 100%;
+  padding: 14px 0px 14px 73px;
+  display: flex;
+}
+
 .table-style {
   text-align: center;
   border-collapse: collapse;
   border-spacing: 5px;
   background-color: #f4d5cb;
-  position: absolute;
+  border-radius: 5px;
 }
 
 th {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
-  padding: 9px 25px;
+  padding: 3px 19px;
   border-bottom: 2px solid #F56433;
   color: rgb(51, 11, 11);
 }
 
 .imgsize {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
+}
+
+.youtube-time {
+  height: 0;
+  overflow: hidden;
+}
+
+.youtube-time iframe {
+  position: absolute;
+  bottom: 14%;
+  right: 5%;
+  width: 39%;
+  height: 71%;
+  border-width: 0;
+  outline-width: 0;
+}
+
+.podval {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text__minenew {
+  font-size: 16px;
+  font-family: "Orbitron", sans-serif;
+  color: #FFF;
+  opacity: 0.5;
 }
