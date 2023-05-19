@@ -9,7 +9,7 @@
   height: 100%;
   background: #333;
   overflow: hidden;
-//   background-size: cover;
+  background-size: cover;
   background-position: center center;
 }
 
@@ -19,7 +19,6 @@
 
 
 .title {
-
 	&__tourn {
 		position: absolute;
 		top: 0;
@@ -166,13 +165,13 @@
 th {
 	font-size: 15px;
    font-weight: 400;
-   padding: 3px 19px;
+   padding: 1px 19px;
 	border-bottom: 2px solid #F56433;
 	color: rgb(51, 11, 11);
 }
 .imgsize{
-	width: 25px;
-	height: 25px;
+	width: 20px;
+	height: 20px;
 }
 
 .youtube-time{
@@ -212,14 +211,7 @@ th {
 	opacity: 0.5;
 }
 
-// @media screen and (min-width:1501px) and (max-width:1920px) {
-
-// }
-
 @media screen and (max-width: 1778px) {
-	// body{
-	// 	max-height: 1080px;
-	// }
 	.team{
 		width: 140px;
     	height: 20px;
@@ -291,4 +283,17 @@ th {
 	.youtube-time{
 		width: 43%;
 	}
+}
+
+@media screen and (max-width: 880px) {
+	body{
+		height: 1000px;
+	}
+	.table-turnir {
+		height: 44%;
+  }
+  .block1__path1{
+	flex-wrap: wrap;
+  }
+
 }
