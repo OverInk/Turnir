@@ -44,6 +44,10 @@
   font-size: 30px;
 }
 
+.for-stream {
+  width: 350px;
+}
+
 .table-turnir {
   position: absolute;
   top: 14%;
@@ -136,17 +140,17 @@
   position: absolute;
   bottom: 4%;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.48);
   width: 100%;
   padding: 14px 0px 14px 73px;
   display: flex;
+  justify-content: space-between;
 }
 
 .table-style {
   text-align: center;
   border-collapse: collapse;
   border-spacing: 5px;
-  background-color: #f4d5cb;
+  background-color: rgba(233, 162, 140, 0.78);
   border-radius: 5px;
 }
 
@@ -164,8 +168,15 @@ th {
 }
 
 .youtube-time {
-  height: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 694px;
+  height: 383px;
+  margin-right: 41px;
+  border-radius: 15px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
 }
 
 .youtube-time iframe {

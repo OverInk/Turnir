@@ -52,6 +52,9 @@
 		}
 	}
 }
+.for-stream{
+	width: 350px;
+}
 
 
 .table-turnir{
@@ -146,17 +149,17 @@
 	position:absolute;
 	bottom: 4%;
    left: 0;
-	background-color: rgb(255 255 255 / 48%);
 	width: 100%;
 	padding: 14px 0px 14px 73px;
 	display: flex;
+	justify-content: space-between;
 	
 }
 .table-style{
 	text-align: center;
 	border-collapse: collapse;
 	border-spacing: 5px;
-	background-color: #f4d5cb;
+	background-color:rgb(233 162 140 / 78%);
 	border-radius: 5px;
 }
 th {
@@ -172,9 +175,15 @@ th {
 }
 
 .youtube-time{
-	// margin: 43px 0px 0px 95px;
-  height: 0;
-  overflow: hidden;
+	background-color: rgb(255 255 255 / 30%);
+	width: 694px;
+	height: 383px;
+	margin-right: 41px;
+	border-radius: 15px;
+  	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	padding-top: 15px;
 }
 .youtube-time iframe{
 	position: absolute;
