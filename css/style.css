@@ -1,23 +1,84 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
-.large-header {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: #333;
-  background-size: cover;
-  background-position: center center;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-#large-header {
-  background-image: url("https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg");
+*, *:before, * after {
+  box-sizing: border-box;
+}
+
+:focus, active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-abjust: 100%;
+  -moz-text-size-abjust: 100%;
+  -webkit-text-size-abjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*Возможно когда-нибудь будет ситуация, когда нуно убрать крестик, который появляется в браузере Explore в поисковике. Если она не нужна, то убрать эту команду*/
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+body {
+  background-image: url(../img/outerspace-77.gif);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .title__tourn {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 80px;
   background: rgba(255, 255, 255, 0.48);
@@ -51,15 +112,14 @@
 }
 
 .table-turnir {
-  position: absolute;
-  top: 14%;
-  left: 0px;
   width: 100%;
-  height: 42%;
+  height: 55%;
+  background-color: rgba(14, 14, 14, 0.48);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px 0px 30px 0px;
 }
 
 .block1 {
@@ -128,10 +188,13 @@
   height: 30px;
   background: #FFF;
   margin: 18px 10px 0px 10px;
-  border-radius: 4px;
-  text-align: center;
+  border-radius: 7px;
   font-size: 16px;
+  font-family: "Saira Condensed", sans-serif;
   border: 1px solid #747171;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-style {
@@ -139,9 +202,6 @@
 }
 
 .next__session {
-  position: absolute;
-  bottom: 4%;
-  left: 0;
   width: 98%;
   padding: 14px 0px 14px 73px;
   display: flex;
@@ -171,13 +231,14 @@ th {
 
 .youtube-time {
   background-color: rgba(255, 255, 255, 0.3);
-  width: 46%;
+  width: 45%;
   margin-right: 41px;
   border-radius: 15px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   padding-top: 15px;
+  position: relative;
 }
 
 .youtube-time iframe {
@@ -191,9 +252,6 @@ th {
 }
 
 .podval {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -205,106 +263,4 @@ th {
   font-family: "Orbitron", sans-serif;
   color: #FFF;
   opacity: 0.5;
-}
-
-@media screen and (max-width: 1778px) {
-  .team {
-    width: 140px;
-    height: 20px;
-  }
-  th {
-    padding: 1px 17px;
-  }
-  .table-turnir {
-    top: 11%;
-  }
-}
-@media screen and (max-width: 1594px) {
-  .text__mine {
-    font-size: 37px;
-  }
-  .text__pink {
-    font-size: 16px;
-  }
-  .title-stage {
-    font-size: 14px;
-  }
-  .title__tourn {
-    height: 60px;
-  }
-  .table-turnir {
-    height: 50%;
-  }
-  .imgsize {
-    width: 10px;
-    height: 10px;
-  }
-  .next__session {
-    padding: 0px 0px 0px 73px;
-  }
-  .youtube-time iframe {
-    bottom: 7%;
-    right: 11%;
-    width: 27%;
-    height: 73%;
-  }
-}
-@media screen and (max-width: 1315px) {
-  .team {
-    margin: 6px 10px 0px 10px;
-  }
-  .block1 {
-    width: 75%;
-  }
-  .block1__path2 {
-    height: 165px;
-    width: 263px;
-    margin: 20px 10px 0px 10px;
-  }
-  th {
-    padding: 1px 12px;
-  }
-}
-@media screen and (max-width: 1250px) {
-  .table-turnir {
-    height: 43%;
-  }
-  th {
-    padding: 0px 8px;
-  }
-  .youtube-time {
-    width: 43%;
-  }
-  .text__pink {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 880px) {
-  .table-turnir {
-    height: 70%;
-  }
-  .block1__path1 {
-    flex-wrap: wrap;
-  }
-  th {
-    font-size: 8px;
-  }
-  .team {
-    width: 100px;
-  }
-  .next__session {
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.5s all;
-  }
-  .next__session.active {
-    opacity: 1;
-    pointer-events: all;
-    transition: 0.5s all;
-    z-index: 100;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  }
-  .text__pink {
-    width: 77px;
-  }
 }
