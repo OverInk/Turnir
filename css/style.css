@@ -199,8 +199,7 @@ body {
 }
 
 .next__session {
-  width: 98%;
-  margin: 50px 0px 0px 40px;
+  margin: 80px 0px 0px 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -208,7 +207,7 @@ body {
 .table-style {
   text-align: center;
   border-collapse: collapse;
-  border-spacing: 5px;
+  border-spacing: 10px;
   background-color: rgba(233, 162, 140, 0.78);
   border-radius: 5px;
 }
@@ -261,4 +260,87 @@ th {
   font-family: "Orbitron", sans-serif;
   color: #FFF;
   opacity: 0.5;
+}
+
+@media screen and (max-width: 1400px) {
+  th {
+    padding: 1px 16px;
+  }
+  .text__mine {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1265px) {
+  th {
+    padding: 1px 13px;
+  }
+  .imgsize {
+    width: 22px;
+    height: 27px;
+  }
+  .team {
+    width: 108px;
+    margin: 10px 7px 0px 7px;
+  }
+  .youtube-time {
+    width: 39%;
+  }
+}
+@media screen and (max-width: 1004px) {
+  .next__session {
+    margin: 50px 0px 0px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .youtube-time {
+    width: 58%;
+    padding: 0px 0px 352px 0px;
+    margin-top: 30px;
+    justify-content: center;
+    right: 0%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .title-stage {
+    font-size: 14px;
+  }
+  .table-turnir {
+    height: 80%;
+  }
+  .block1__path2 {
+    margin: 0px;
+    background: url(../img/mobilebg.jpg) center no-repeat;
+    background-size: contain;
+    height: 243px;
+    width: 100%;
+  }
+  .team {
+    width: 90px;
+  }
+  .text__mine {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .title-stage {
+    font-size: 12px;
+  }
+  .text__mine {
+    font-size: 30px;
+  }
+  th {
+    padding: 1px 10px;
+  }
+  .imgsize {
+    width: 20px;
+    height: 23px;
+  }
+  .team {
+    width: 87px;
+    height: 23px;
+  }
+  .youtube-time {
+    width: 72%;
+  }
 }
