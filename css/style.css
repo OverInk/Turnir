@@ -309,7 +309,7 @@ th {
     height: 80%;
   }
   .block1__path2 {
-    margin: 0px;
+    margin: 0 10px 0 10px;
     background: url(../img/mobilebg.jpg) center no-repeat;
     background-size: contain;
     height: 243px;
@@ -342,5 +342,46 @@ th {
   }
   .youtube-time {
     width: 72%;
+  }
+}
+@media screen and (max-width: 588px) {
+  .team {
+    width: 82px;
+    height: 17px;
+    font-size: 13px;
+  }
+  .table-turnir {
+    padding: 12px 0px 12px 0px;
+  }
+  .next__session {
+    margin: 35px 0px 0px 0px;
+  }
+  th {
+    padding: 1px 7px;
+    font-size: 13px;
+  }
+  .imgsize {
+    width: 20px;
+    height: 21px;
+  }
+  .youtube-time {
+    width: 67%;
+    padding: 0px 0px 251px 0px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .block1 {
+    flex-direction: column;
+    height: 100%;
+  }
+  .block1__path2 {
+    background: url(../img/tornament.png) center no-repeat;
+    background-size: contain;
+    margin: 10px 0px 10px 0px;
+    height: 100px;
+  }
+  .table-turnir {
+    height: 115%;
+    margin: 41px 0px 0px 0px;
   }
 }
