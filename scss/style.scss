@@ -195,7 +195,37 @@ th {
 	color: #FFF;
 	opacity: 0.5;
 }
-// @media screen and (max-width: 1778px) {
+//jS knopka
+.js__button{
+	position: fixed;
+   top: 30%;
+   left: 22%;
+   width: 61%;
+   height: 7%;
+   background: white;
+   opacity: 0; 
+   pointer-events: none;
+   transition: 0.5s all;
+	display: flex;
+	flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+	border: 2px solid gray;
+   border-radius: 10px;
+}
+
+.js__button.active{
+	opacity: 1; 
+   pointer-events: all; // Возвращаем события
+   transition: 0.5s all;
+	z-index: 100;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.btn-cancel{
+	border-radius: 10px;
+	background: rgb(188, 187, 187);
+	width: 87px;
+}
 
 @media screen and (max-width:1400px) {
 		th{
@@ -267,6 +297,9 @@ th {
   .text__mine {
 	font-size: 30px;
 	}
+	.text__pink{
+		font-size: 15px;
+	}
 	th {
 		padding: 1px 10px;
   }
@@ -325,4 +358,30 @@ th {
     height: 115%;
 	 margin: 41px 0px 0px 0px;
 	}
+}
+@media screen and (max-width:456px) {
+	.youtube-time {
+    width: 73%;
+    padding: 0px 0px 210px 0px;
+	}
+	th {
+    padding: 1px 6px;
+    font-size: 12px;
+	}
+	.imgsize {
+    width: 15px;
+    height: 18px;
+	}
+	.table-turnir {
+    margin: 15px 0px 0px 0px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.youtube-time {
+    width: 81%;
+    padding: 0px 0px 170px 0px;
+	}
+}
+.next__session {
+    margin: 25px 0px 0px 0px;
 }
