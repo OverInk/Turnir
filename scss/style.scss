@@ -198,10 +198,10 @@ th {
 //jS knopka
 .js__button{
 	position: fixed;
-   top: 21%;
-   left: 30%;
-   width: 40%;
-   height: 26%;
+   top: 14%;
+   left: 34%;
+   width: 32%;
+   height: 36%;
    background: white;
    opacity: 0; 
    pointer-events: none;
@@ -227,7 +227,7 @@ th {
 .js {
 	&__title {
 		font-size: 25px;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 		color: transparent;
 		background-image: linear-gradient(#462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
   		-webkit-background-clip: text;
@@ -236,15 +236,31 @@ th {
 		align-items: center;
 		text-transform: uppercase;
 		width: 100%;
+		font-family: "Orbitron", sans-serif;
 	}
 
 	&__title-team {
 		margin-bottom: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		font-size: 18px;
+		font-family: "Saira Condensed", sans-serif;
 	}
 
 	&__class {
-		padding: 0px 40px 20px 0px;
+		margin: 0px 20px 20px 0px;
+   	width: 96px;
+    	border-radius: 10px;
+    	padding: 2px 7px;
+    	background-color: rgb(255 255 255 / 47%);
+		font-size: 16px;
+		font-family: "Saira Condensed", sans-serif;
 	}
+}
+.js__class:last-child{
+	margin: 0px 20px 0px 0px;
 }
 .players {
 	display: flex;
@@ -252,10 +268,11 @@ th {
    font-size: 22px;
 	margin-bottom: 30px;
 }
+
 .btn-cancel{
 	border-radius: 10px;
 	background:rgb(65 176 170 / 56%);
-	padding: 5px 10px;
+	padding: 5px 30px;
 }
 
 @media screen and (max-width:1400px) {
@@ -298,6 +315,15 @@ th {
     	justify-content: center;
 		right: 0%;
 	}
+	.js__button.active{
+		padding: 10px;
+	}
+	.js__title{
+		font-size: 19px;
+	}
+	.js__title-team{
+		margin-bottom: 10px;
+	}
 }
 @media screen and (max-width:850px) {
 	.title-stage{
@@ -319,6 +345,16 @@ th {
 	}
 	.text__mine {
 		font-size: 40px;
+  }
+  .players{
+	margin-bottom: 20px;
+  }
+  .js__class{
+	margin: 0px 20px 10px 0px;
+	font-size: 13px;
+  }
+  .js__button{
+	height: 49%;
   }
 }
 @media screen and (max-width:640px) {
@@ -405,6 +441,10 @@ th {
 	}
 	.table-turnir {
     margin: 15px 0px 0px 0px;
+	}
+	.js__title {
+		font-size: 15px;
+		margin-bottom: 7px;
 	}
 }
 @media screen and (max-width: 400px) {
