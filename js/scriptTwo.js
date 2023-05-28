@@ -1,7 +1,6 @@
 "use strict"
 
 const listPlyers = document.querySelector('.js__button');
-const closeBtn = document.querySelector('.btn-cancel');
 const numTeam1 = document.getElementById('num1');
 
 numTeam1.addEventListener("click", function (e) {
@@ -86,17 +85,31 @@ numTeam15.addEventListener("click", function (e) {
 	listPlyers.classList.add('active');
 });
 
-// При нажатии CLOSE закрывается форма
-closeBtn.addEventListener('click', () => { //обработчик на Close
-	listPlyers.classList.remove('active');
-});
+// // При нажатии CLOSE закрывается форма
+// closeBtn.addEventListener('click', () => { //обработчик на Close
+// 	listPlyers.classList.remove('active');
+// });
 
 
+// const closeBtn = document.querySelectorAll('.btn-cancel');
+// for (var i = 0; i < buttons.length; ++i) {
+// 	closeBtn[i].addEventListener('click', function (e) {
+// 		listPlyers.classList.remove('active');
+// 	});
+// }
 
+// document.querySelector('.table-turnir').addEventListener("click", function (e) {
+// 	if (e.target.classList.contains('btn-cancel')) listPlyers.classList.remove('active');
+// });
 
-
-
-
+let listPlay = document.querySelectorAll('.js__button');
+let closeBtn = document.querySelectorAll('.btn-cancel');
+for (var i = 0; i < closeBtn.length; i++) {
+	closeBtn[i].addEventListener('click', function (e) {
+		listPlyers.classList.remove('active');
+		numTeamActive2.classList.remove('active');
+	});
+};
 
 
 
