@@ -1,15 +1,15 @@
 "use strict"
 
-let listPlay = document.querySelectorAll('.js__button');
-let closeBtn = document.querySelectorAll('.btn-cancel');
-for (var i = 0; i < closeBtn.length; i++) {
-	closeBtn[i].addEventListener('click', function (e) {
-		const listPlayer = e.currentTarget.dataset.target;
-		listPlyers.classList.remove('active');
-		numTeamActive2.classList.remove('active');
-		document.querySelector(`[data-target=${listPlayer}]`).classList.remove('active');
-	});
-};
+// let listPlay = document.querySelectorAll('.js__button');
+// let closeBtn = document.querySelectorAll('.btn-cancel');
+// for (var i = 0; i < closeBtn.length; i++) {
+// 	closeBtn[i].addEventListener('click', function (e) {
+// 		const listPlayer = e.currentTarget.dataset.target;
+// 		listPlyers.classList.remove('active');
+// 		numTeamActive2.classList.remove('active');
+// 		document.querySelector(`[data-target=${listPlayer}]`).classList.remove('active');
+// 	});
+// };
 
 
 document.querySelectorAll('.team').forEach(e => {

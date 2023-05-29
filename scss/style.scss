@@ -237,6 +237,7 @@ th {
 		text-transform: uppercase;
 		width: 100%;
 		font-family: "Orbitron", sans-serif;
+		-webkit-text-stroke: 0.3px rgb(188 192 115);
 	}
 
 	&__title-team {
@@ -318,11 +319,17 @@ th {
 	.js__button.active{
 		padding: 10px;
 	}
+	.js__button{
+		height: 52%;
+	}
 	.js__title{
 		font-size: 19px;
 	}
 	.js__title-team{
 		margin-bottom: 10px;
+	}
+	.btn-cancel{
+		padding: 3px 10px;
 	}
 }
 @media screen and (max-width:850px) {
@@ -354,8 +361,15 @@ th {
 	font-size: 13px;
   }
   .js__button{
-	height: 49%;
+	height: 51%;
   }
+}
+@media screen and (max-width:814px) {
+	.js__button{
+		width: 20%;
+		top: 21%;
+    	left: 40%;
+	}
 }
 @media screen and (max-width:640px) {
 	.title-stage {
@@ -381,6 +395,14 @@ th {
   .youtube-time{
 	width: 72%;
   }
+  .js__button{
+	width: 27%;
+	top: 21%;
+	 left: 35%;
+	}
+	.js__title {
+		font-size: 15px;
+  	}
 }
 
 @media screen and (max-width:588px) {
@@ -425,6 +447,9 @@ th {
     height: 115%;
 	 margin: 41px 0px 0px 0px;
 	}
+	.js__title {
+		font-size: 13px;
+	}
 }
 @media screen and (max-width:456px) {
 	.youtube-time {
@@ -442,9 +467,8 @@ th {
 	.table-turnir {
     margin: 15px 0px 0px 0px;
 	}
-	.js__title {
-		font-size: 15px;
-		margin-bottom: 7px;
+	.js__button{
+	width: 32%;
 	}
 }
 @media screen and (max-width: 400px) {
@@ -455,4 +479,7 @@ th {
 	.next__session {
 		margin: 25px 0px 0px 0px;
   }
+  .js__button{
+	width: 34%;
+	}
 }
