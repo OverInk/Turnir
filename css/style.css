@@ -194,6 +194,10 @@ body {
   justify-content: center;
 }
 
+.team:hover {
+  background: #37c0c0;
+}
+
 .text-style {
   background-color: #959595;
 }
@@ -208,7 +212,7 @@ body {
   text-align: center;
   border-collapse: collapse;
   border-spacing: 10px;
-  background-color: rgba(233, 162, 140, 0.78);
+  background-color: rgba(135, 208, 222, 0.79);
   border-radius: 5px;
 }
 
@@ -216,7 +220,7 @@ th {
   font-size: 15px;
   font-weight: 400;
   padding: 1px 19px;
-  border-bottom: 2px solid #F56433;
+  border-bottom: 2px solid #596e74;
   color: rgb(51, 11, 11);
 }
 
