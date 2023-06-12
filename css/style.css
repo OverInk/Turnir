@@ -195,7 +195,7 @@ body {
 }
 
 .team:hover {
-  background: #37c0c0;
+  background: #3aacac;
 }
 
 .text-style {
@@ -213,7 +213,7 @@ body {
   border-collapse: collapse;
   border-spacing: 10px;
   background-color: rgba(135, 208, 222, 0.79);
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 th {
